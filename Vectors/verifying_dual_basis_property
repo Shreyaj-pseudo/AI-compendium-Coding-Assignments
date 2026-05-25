@@ -1,0 +1,13 @@
+import jax.numpy as jnp
+
+# Standard basis in R3
+e1 = jnp.array([1.0, 0.0, 0.0])
+e2 = jnp.array([0.0, 1.0, 0.0])
+e3 = jnp.array([0.0, 0.0, 1.0])
+
+v = jnp.array([5.0, 3.0, 7.0])
+
+# Each dot product extracts one coordinate
+print(f"e1 · v = {jnp.dot(e1, v)}")
+print(f"e2 · v = {jnp.dot(e2, v)}")
+print(f"e3 · v = {jnp.dot(e3, v)}")
